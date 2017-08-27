@@ -1,26 +1,26 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## What I need to make this works?
 
-## How to use this template
+Right, so you need a couple of things installed:
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+- npm & node
+- ionic & cordova
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+After that you need to run:
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+```
+cp service/.env.sample service/.env
 ```
 
-Then, to run it, cd into `myBlank` and run:
+### How do I turn this on?
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+So I'm not that expert with Ionic or Angular2 (in fact this is my first try with it) so bear with me as this is going to be kind of crude:
+
+To start the service:
+```
+cd service && node index.js
 ```
 
-Substitute ios for android if not on a Mac.
-
+To start the frontend:
+```
+cd front_web && ionic serve
+```

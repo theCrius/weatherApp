@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <ion-title>
+      osloWeather
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <h4 text-center>I really need my daily fix of Dunder Salt. Let's see how's the weather in Oslo!</h4>
+  <ion-card *ngIf="weatherOslo">
+    <img *ngIf="weatherOslo.currently.image" src="{{weatherOslo.currently.image}}">
+    <ion-card-content text-center>
+      <p>Mhm... Seems like the weather is {{weatherOslo.currently.summary | lowercase}} there!</p>
+      <hr>
+      <p>Now, maybe I don't have time for today. The next days seems that will be {{weatherOslo.daily.summary}}</p>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button round (click)="showWeatherHere()">Don't trust me? <br>Ask me how's the weather here right now!?</button>
+</ion-content>
