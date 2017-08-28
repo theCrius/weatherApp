@@ -17,7 +17,7 @@ So I'm not that expert with Ionic or Angular2 (in fact this is my first try with
 
 To start the service:
 ```
-cd service && node index.js
+cd service && npm start
 ```
 
 To start the frontend:
